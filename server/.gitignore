@@ -5,8 +5,8 @@ node_modules
 /generated/prisma
 
 # Database
-dev.db
-dev.db-journal
+# dev.db
+# dev.db-journal
 
 # Build
 dist/
