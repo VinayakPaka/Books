@@ -60,6 +60,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         redirect_uri: window.location.origin,
         audience: audience,
       }}
+      cacheLocation="localstorage"
     >
       <AuthorizedApolloProvider>
         <ChakraProvider value={defaultSystem}>

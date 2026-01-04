@@ -11,6 +11,7 @@ export class BookResolver {
     constructor(private readonly bookService: BookService) { }
 
     @Query(() => [Book])
+    @UseGuards(GqlAuthGuard)
     async books(): Promise<Book[]> {
         return this.bookService.findAll();
     }
